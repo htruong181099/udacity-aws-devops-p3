@@ -103,13 +103,12 @@ The benefit here is that it's explicitly set. However, note that the `DB_PASSWOR
 
 
 ```bash
-    cd deployment
     kubectl apply -f pvc.yml
     kubectl apply -f pv.yml
     kubectl apply -f postgresql-deployment.yml
     kubectl apply -f postgresql-service.yml
-    kubectl apply -f ConfigMap.yml
-    kubectl apply -f secrets.yml
+    kubectl apply -f configmap.yml
+    kubectl apply -f secret.yml
     kubectl apply -f deployment.yml
 ```
 
